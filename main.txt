@@ -1,0 +1,34 @@
+function large(element) {
+	element.style.fontSize = "45px";
+}
+function little(element){
+	element.style.fontSize = "40px";
+}
+function change(element){
+   var a = element.innerHTML;
+   switch(a){
+   	case("Партнеры"):
+    document.getElementById('div2').innerHTML=
+    document.getElementById('partners').innerHTML;
+       $('.img2').hide();
+       $('.img2').show(1000);
+       
+       $('.img3').hide();
+       $('.img3').show(1000);
+       
+       $('.img4').hide();
+       $('.img4').show(1000);
+       
+       $('.img5').hide();
+       $('.img5').show(1000);
+   break;
+   }
+}
+function myFunction(element) {
+   var x = document.getElementById("navbar");
+  if (x.style.display == "block") {
+     x.style.display = "none";
+  }else {
+     x.style.display = "block";
+  }
+}

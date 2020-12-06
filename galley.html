@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Winner Bet</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <script type="text/javascript" src="main.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="div1" class="container-fluid">
+	<p class="p1"><strong>Latest News: </strong>  Lorem ipsum dolor sit amet, cons ecte tuer adipiscing elit.</p>
+   <button id="btn1" class="btn btn-light"  style="height: 45px;" onclick="document.getElementById('id01').style.display = 'block'"><img src="https://w0.pngwave.com/png/112/858/computer-icons-icon-design-user-register-button-png-clip-art.png" id="icon"> Sign Up</button>
+   <button id="btn2" class="btn btn-light" style="height: 45px;" style="height: 45px;" onclick="document.getElementById('id02').style.display = 'block'"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZekGgS3DR9NAP_D2qxhO76meYfra6XyzPwQ&usqp=CAU" id="icon2"> Log in</button>
+
+<div id="id01" class="modal">
+  <form class="modal-content" id="form1">
+  <span onclick="document.getElementById('id01').style.display='none'" class="closed" title="Close Modal">&times</span>
+    <div id="container" class="container">
+      <h1 id="sign">Sign Up</h1><br>
+      <label for="email"><b>Name</b></label><br>
+      <input type="text" placeholder="Enter Name" name="name" required><br>
+
+      <label for="email"><b>Email</b></label><br>
+      <input type="text" placeholder="Email" name="email" required><br>
+
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
+      <div>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div id="id02" class="modal" >
+  <form class="modal-content" id="form2">
+  <span onclick="document.getElementById('id02').style.display='none'" id="close" title="Close Modal">&times</span>
+    <div id="container2" class="container">
+      <h1 id="login">Log in</h1><br>
+      <label for="email"><b>Name</b></label><br>
+      <input type="text" placeholder="Enter Name" name="name" required><br>
+
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label><br>
+      <button type="submit" class="signup">Log in</button><br><br>
+    <div class="container">
+         <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancel">Cancel</button>
+        <span class="forgotpsw"><a href="#">Forgot password?</a></span>
+     </div>
+    </div>
+   </div>
+  </form>
+</div>
+</div>
+
+<div id="div3" class="flexslider">
+	<nav class="nav">
+  <li><a href="index.html" id="logo" class="nav-link" onmouseover="large(this)" onmouseout="little(this)">Winner Bet</a></li>
+	<ul class="navbar" id="navbar">
+      <li><a href="#" class="nav-link" id="home">Меню</a></li>
+      <li><a href="#" class="nav-link" onclick="change(this)" onclick="change(this)">Партнеры</a></li>
+      <li><a href="#" class="nav-link" onclick="change(this)">Блог</a></li>
+       <li><a href="#" class="nav-link">Галерея</a></li>
+  </ul>
+    <a href="javascript:void(0);" class="burger-menu" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+</nav>
+    <img src="https://d3j2s6hdd6a7rg.cloudfront.net/v2/uploads/media/default/0002/08/237e381a34540b267bacbd6e177eb40435b1a583.jpeg" id="img1">
+    <img src="https://sportshub.cbsistatic.com/i/r/2016/06/22/0fdc36a9-a1fd-475c-857d-9b4c1185c3aa/thumbnail/1200x675/9180d352d0161f1946e546d38325016b/lebronbanner.jpg" id="img2">    
+     <img src="https://www.morrisonhotelgallery.com/images/medium/LEBRON%20JAMESBACK%20HOME2014.jpg" id="img3">
+     <img src="https://media.istockphoto.com/photos/soccer-player-kicks-a-ball-picture-id1163749879?k=6&m=1163749879&s=612x612&w=0&h=fZG7PByknJ68L8EvA6LvXyXClUqOm32OohE7y2mFcak=" id="img4">
+</div>
+  </body>
+  <style>
+      #img1{
+          position: relative;
+          left:7%;
+          top: 35px;
+          width: 40%;
+          height: 285px;
+      }
+      #img1:hover{
+          opacity: 0.7;
+      }
+      #img2{
+          position: absolute;
+          left:52%;
+          width: 40%;
+      }
+      #img3{
+          position: absolute;
+          left:7%;
+          top: 490px;
+          width: 40%;
+          height: 285px;
+      }
+      #img4{
+          position: relative;
+          left: 11.5%;
+          top: 355px;
+          width: 40%;
+          height: 285px;
+      }
+      @media (max-width: 500px){
+        body{
+          height: 1000px;
+        }
+        #img1{
+          position: relative;
+          left: 5%;
+          width: 90%;
+          height: 250px;
+        }
+        #img2{
+          position: relative;
+          left: 5%;
+          top:70px;
+          width: 90%;
+          height: 250px;
+        }
+        #img3{
+          position: relative;
+          left: 5%;
+          top:100px;
+          width: 90%;
+          height: 250px;
+        }
+        #img4{
+          position: relative;
+          left: 5%;
+          top:130px;
+          width: 90%;
+          height: 250px;
+        }
+      }
+  </style>
+</html>

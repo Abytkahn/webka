@@ -1,0 +1,465 @@
+body {
+	padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 1500px;
+}
+ul li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+#div1 {
+	position: relative;
+	width: 100%;
+	height: 45px;
+	background-color: #009900; 
+	display: flex;
+}
+.p1 {
+	position: relative;
+	left: 200px;
+	margin-top: 10px;
+	width: 550px;
+	color: #fff;
+}
+#btn1 {
+	position: relative;
+	left: 350px;
+}
+#btn2 {
+	position: relative;
+	left: 355px;
+}
+/******** Register ********/
+.closed {
+  position: absolute;
+  left: 450px;
+  top: 0px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+.closed:hover {
+	color:red;
+}
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+  float: left;
+  width: 20%;
+  border: none;
+  color: #fff;
+}
+.signupbtn {
+  padding: 14px 20px;
+  background-color: green;
+  border:none;
+  color: #fff;
+  width: 20%;
+}
+#container {
+  padding: 15px;
+  margin-left: 20px;
+  width: 900px;
+}
+#form1 {
+  width: 40%; 
+  margin-left: 370px;
+}
+/******** Log in ************/
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+#close {
+  position: absolute;
+  left: 430px;
+  top: 0px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+#close:hover {
+	color:red;
+}
+.cancel {
+  padding: 14px 20px;
+  background-color: #f44336;
+  position: absolute;
+  left: 15px;
+  width: 175px;
+  border: none;
+  color: #fff;
+}
+.signup {
+  padding: 14px 20px;
+  background-color: green;
+  border:none;
+  color: #fff;
+  width: 20%;
+}
+#container2 {
+  padding: 16px;
+  margin-left: 0px;
+  width: 900px;
+  height: 475px;
+}
+.modal {
+  position: fixed; 
+  width: 100%; 
+  height: 100%;  
+  background-color: rgb(10, 10, 10);
+  padding-top: 50px;
+}
+.forgotpsw{
+	position: absolute;
+	left: 300px;
+	font-size: 20px;
+	top: 415px;
+}
+#form2 {
+  width: 38%; 
+  margin-left:400px;
+}
+
+#icon {
+	position: relative;
+	width: 20px;
+}
+#icon2 {
+	position: relative;
+	width: 20px;
+}
+.burger-menu {
+  display: none;
+}
+.nav{
+	position: relative;
+	width: 100%;
+  height: 90px;
+	background-color: rgb(0, 0, 0, 0.9); 
+}
+#logo{
+  position: relative;
+	left: 55%;
+  cursor: pointer;
+  font-size: 40px;
+  letter-spacing: 10px;
+  color: #fff;
+}
+.nav #logo:hover {
+  color:  #ff9900;
+}
+#navbar a{
+	position: relative;
+	left: 180px;
+  top: 5px;
+	margin-right: 30px;
+	font-size: 18px;
+  color: #fff;
+}
+#navbar a:hover {
+  color: #ff9900;
+}
+#img1 {
+  width: 100%;
+  height: 500px;
+}
+#heading1 {
+	position: absolute;
+	left: 150px;
+	top: 250px;
+	width: 80%;
+	color: #000;
+	background: #ffcc00;
+}
+#btn3 {
+	position: absolute;
+	width: 200px;
+	left: 40%;
+	top: 430px;
+}
+#demo1 {
+	position: absolute;
+	display: none;
+  left: 35%; 
+	top: 530px;
+	font-size: 50px;
+	color: #000;
+	background: #ffcc00;
+}
+#partners {
+  display: none;
+}
+.img2 {
+  position: absolute;
+  top: 250px;
+  left: 200px;
+}
+.img3 {
+  position: absolute;
+  top: 250px;
+  left: 800px;
+}
+.img4 {
+  position: absolute;
+  top: 450px;
+  left: 200px;
+}
+.img5 {
+  position: absolute;
+  top: 450px;
+  left: 800px;
+}
+#content1 {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  background-color: #f1f1f1;
+}
+.input input {
+  position: relative;
+  left: 100px;
+  top: 15px;
+  background-color: #fff;
+  height: 40px;
+  margin-right: 20px;
+}
+#Command1{
+  width: 80%;
+  border: 2px solid;
+}
+#Command2 {
+  position: absolute;
+  left: 43%;
+  top: 650px;
+  width: 15%;
+  border: 2px solid;
+}
+input[type=date]{
+  position: absolute;
+  left: 60%;
+  top: 655px;
+}
+.vs {
+  position: absolute;
+  left: 39%;
+  top: 655px;
+} 
+h4 {
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+.btn4 {
+  position: relative;
+  left: 50%;
+  top: 15px;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+}
+.header-gallery {
+  position: relative;
+  left: 30%;
+  top:50px;
+  width: 50%;
+  color: #000;
+}
+.img6 {
+  position: relative;
+  left: 7%;
+  top: 80px;
+  width: 40%;
+}
+.img7 {
+  position: relative;
+  left: 12%;
+  top: 80px;
+  width: 40%;
+  height: 260px;
+}
+.img8 {
+  position: relative;
+  left: 30%;
+  top: 130px;
+  width: 40%;
+}
+
+
+
+
+@media (max-width: 500px){
+  body {
+    width: 100%;
+    height: 1600px;
+  }
+  #img1 {
+    height: 400px;
+  }
+  #logo{
+    position: absolute;
+    left: 3%;
+  }
+  .p1 {
+    position: absolute;
+    width: 70%;
+    top: 0px;
+    left: 10px;
+    font-size: 11px;
+  }
+  #btn1 {
+    width: 50px;
+    font-size: 9px;
+  }
+  #icon {
+    width: 10px;
+  }
+  #btn2 {
+    position: relative;
+    width: 13%;
+    font-size: 10px;
+  }
+  #icon2 {
+    width: 10px;
+  }
+  #heading1 {
+    left:70px;
+    top: 230px;
+    width: 70%;
+    text-align: center;
+    height: 70px;
+    font-size: 28px;
+  }
+  #btn3 {
+    position: absolute;
+    left: 130px;
+    top: 350px;
+    color: #000;
+  }
+  #demo1 {
+    position: absolute;
+    left: 110px;
+    top: 450px;
+    width: 50%;
+    text-align: center;
+    font-size: 30px;
+  }
+  .burger-menu {
+    position: absolute;
+    left: 400px;
+    top: 10px;
+    color: #fff;
+    font-size: 40px;
+    display: block;
+  }
+  .burger-menu i:hover {
+    color: #ff9900;
+  }
+  .nav #navbar {
+    display: none;
+  }
+  #navbar {
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px; 
+  }
+  #navbar a {
+    position: relative; 
+    left: 0px; 
+    top: 20px;
+    margin-right: 1px;
+    float: left;
+    font-size: 15px;
+    display: inline-block;
+  }
+  #content1 {
+    width: 100%;
+    height: 150px;
+  }
+  #h4 {
+    position: absolute;
+    left: 3%;
+    margin-top: 545px;
+    font-size: 17px;
+    width: 40%;
+  }
+  #Command1 {
+    position: relative;
+    left: 58%;
+    width: 35%;
+  }
+  .vs {
+    position: absolute;
+    left: 49%;
+    top: 565px;
+    font-size: 15px;
+  }
+  #Command2 {
+    position: absolute;
+    left: 54%;
+    top:550px;
+    width: 17%;
+  }
+  input[type=date]{
+    position: absolute;
+    top:555px;
+    left: 75%;
+    width: 21%;
+  }
+  .btn4 {
+    position: relative;
+    left: 10%;
+    top: 80px;
+  }
+  .content2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+  }
+  .header-gallery {
+    position: relative;
+    left: 0;
+    top: 20px;
+    width: 100%;
+    font-size: 40px;
+  }
+  .img6 {
+    position: relative;
+    left: 5%;
+    top: 50px;
+    width: 90%;
+  }
+  .img7{
+    position: relative;
+    left: 5%;
+    width: 90%;
+    top: 100px;
+  }
+  .img8 {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    margin-top: 20px;
+  }
+}
+

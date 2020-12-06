@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Winner Bet</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <script type="text/javascript" src="main.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="div1" class="container-fluid">
+	<p class="p1"><strong>Latest News: </strong>  Lorem ipsum dolor sit amet, cons ecte tuer adipiscing elit.</p>
+   <button id="btn1" class="btn btn-light"  style="height: 45px;" onclick="document.getElementById('id01').style.display = 'block'"><img src="https://w0.pngwave.com/png/112/858/computer-icons-icon-design-user-register-button-png-clip-art.png" id="icon"> Sign Up</button>
+   <button id="btn2" class="btn btn-light" style="height: 45px;" style="height: 45px;" onclick="document.getElementById('id02').style.display = 'block'"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZekGgS3DR9NAP_D2qxhO76meYfra6XyzPwQ&usqp=CAU" id="icon2"> Log in</button>
+
+<div id="id01" class="modal">
+  <form class="modal-content" id="form1">
+  <span onclick="document.getElementById('id01').style.display='none'" class="closed" title="Close Modal">&times</span>
+    <div id="container" class="container">
+      <h1 id="sign">Sign Up</h1><br>
+      <label for="email"><b>Name</b></label><br>
+      <input type="text" placeholder="Enter Name" name="name" required><br>
+
+      <label for="email"><b>Email</b></label><br>
+      <input type="text" placeholder="Email" name="email" required><br>
+
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
+      <div>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div id="id02" class="modal" >
+  <form class="modal-content" id="form2">
+  <span onclick="document.getElementById('id02').style.display='none'" id="close" title="Close Modal">&times</span>
+    <div id="container2" class="container">
+      <h1 id="login">Log in</h1><br>
+      <label for="email"><b>Name</b></label><br>
+      <input type="text" placeholder="Enter Name" name="name" required><br>
+
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label><br>
+      <button type="submit" class="signup">Log in</button><br><br>
+    <div class="container">
+         <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancel">Cancel</button>
+        <span class="forgotpsw"><a href="#">Forgot password?</a></span>
+     </div>
+    </div>
+   </div>
+  </form>
+</div>
+</div>
+
+<div id="div3" class="flexslider">
+	<nav class="nav">
+  <li><a href="#" id="logo" class="nav-link" onmouseover="large(this)" onmouseout="little(this)" onclick="window.location.reload()">Winner Bet</a></li>
+	<ul class="navbar" id="navbar">
+      <li><a href="#" class="nav-link" id="home">Меню</a></li>
+      <li><a href="#" class="nav-link" onclick="change(this)" onclick="change(this)">Партнеры</a></li>
+      <li><a href="#" class="nav-link" onclick="change(this)">Блог</a></li>
+       <li><a href="galley.html" class="nav-link">Галерея</a></li>
+  </ul>
+    <a href="javascript:void(0);" class="burger-menu" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+</nav>
+    <img src="https://apexindoorsports.com/wp-content/uploads/2018/03/flag-football.jpg"  id="img1">
+   <div class="container" id="div2">
+   	<h1 id="heading1" class="display-3">Заряжай прогноз и выйгрывай</h1>
+   	<button class="btn btn-warning btn-lg" id="btn3">Сделать ставку</button>
+   	<p id="demo1">Ставка сделана</p>
+   	<script type="text/javascript">
+   		$(function() {
+   			$('#btn3').click(function() {
+   				$('#demo1').toggle(1000);
+   			});
+   		});
+   	</script>
+   </div>
+</div>
+</div>
+   <div id="partners" class="container">
+     <img src="https://verybet.ru/wp-content/uploads/2017/07/Olimp_bukmeker.png" width="400" id="img2">
+     <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_1xBet.png" height="150" id="img3">
+     <img src="https://justgobet.com/wp-content/uploads/2019/07/parimatch-logo.png" width="400" id="img4">
+     <img src="https://i.pinimg.com/474x/d0/29/dc/d029dca6d3225b112fb89d339d1fb39c.jpg" width="450" height="170px" id="img5">
+   </div>
+   <div class="container-fluid" id="content1">
+    <h4 class="display-5" id="h4">SEARCH MATCH</h4> 
+    <div class="input">
+      <input type="text" id="Command1">
+      <h4 class="vs">VS</h4>
+      <input type="text" id="Command2">
+      <input type="date">
+    </div>
+    <button class="btn-warning btn4" onclick="function1()">FIND EVENT</button>
+   </div>
+
+<div class="image-container">
+  <h1 class="header-gallery">Our Matches Gallery</h1>
+      <img onclick="modal1()" class="img1" src="https://upl.stack.com/wp-content/uploads/2018/03/01180308/Off-Season-Strength-and-Conditioning-Soccer-Workout-Plan-stack.jpg" style="cursor: pointer; margin-left: 3%; padding-top: 70px;"> 
+      <img onclick="modal2()" class="img2" src="https://kodeforest.com/html/kickoff/extra-images/gallery-list-2.jpg" style="position: absolute; cursor: pointer;">
+      <img onclick="modal3()" class="img3" src="https://upl.stack.com/wp-content/uploads/2018/07/04133000/SoccerPlayers-Stack.jpg" style="position: absolute; cursor: pointer;">
+      <img onclick="modal4()" class="img4" src="https://ca-times.brightspotcdn.com/dims4/default/a01dc7b/2147483647/strip/true/crop/3521x2190+0+0/resize/1486x924!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fa2%2F3d%2F1fc4b42a4729afd44bd2bb07b9fc%2Fhttps-delivery.gettyimages.com%2Fdownloads%2F459271758.jpg" style="position: absolute; cursor: pointer;">
+      <img onclick="modal5()" class="img5" src="https://i.pinimg.com/originals/0a/75/3d/0a753d8ab462c44a07a369b1fa3b00ee.jpg" style="position: absolute; cursor: pointer;">
+      <img onclick="modal6()" class="img6" src="https://psmag.com/.image/t_share/MTI3NTgyMTc4NTQ3NjczNzMx/xavi.jpg" style="position: absolute; cursor: pointer;">
+  </div>
+  <div id="modal1">
+    <span class="closed" onclick="Close()" style="position: absolute; left: 90%; color: #fff;">&times;</span>
+    <img id="modal-img1" src="https://upl.stack.com/wp-content/uploads/2018/03/01180308/Off-Season-Strength-and-Conditioning-Soccer-Workout-Plan-stack.jpg"> 
+  </div>
+  <div id="modal2">
+    <span class="closed" onclick="Close()" style="position: absolute; left: 90%; color: #fff;">&times;</span>
+    <img id="modal-img2" src="https://kodeforest.com/html/kickoff/extra-images/gallery-list-2.jpg"> 
+  </div>  
+  <div id="modal3">
+    <span class="closed" onclick="Close()" style="position: absolute; left: 90%; color: #fff;">&times;</span>
+    <img id="modal-img3" src="https://upl.stack.com/wp-content/uploads/2018/07/04133000/SoccerPlayers-Stack.jpg"> 
+  </div>  
+  <div id="modal4">
+    <span class="closed" onclick="Close()" style="position: absolute; left: 90%; color: #fff;">&times;</span>
+    <img src="https://ca-times.brightspotcdn.com/dims4/default/a01dc7b/2147483647/strip/true/crop/3521x2190+0+0/resize/1486x924!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fa2%2F3d%2F1fc4b42a4729afd44bd2bb07b9fc%2Fhttps-delivery.gettyimages.com%2Fdownloads%2F459271758.jpg" style="position: absolute; top: 10px; opacity: 1; margin-left: 20%; padding-top: 70px; height: 500px; width:60%"> 
+  </div>  
+  <div id="modal5">
+    <span class="closed" onclick="Close()" style="position: absolute; left: 90%; color: #fff;">&times;</span>
+    <img src="https://i.pinimg.com/originals/0a/75/3d/0a753d8ab462c44a07a369b1fa3b00ee.jpg" style="position: absolute; top: 10px; opacity: 1; margin-left: 20%; padding-top: 70px; height: 500px; width:60%"> 
+  </div>  
+  <div id="modal6">
+    <span class="closed" onclick="Close()" style="position: absolute; left: 90%; color: #fff;">&times;</span>
+    <img src="https://psmag.com/.image/t_share/MTI3NTgyMTc4NTQ3NjczNzMx/xavi.jpg" style="position: absolute; top: 10px; opacity: 1; margin-left: 20%; padding-top: 70px; height: 500px; width:60%"> 
+  </div>
+  
+  <div class="matches">
+    <h1 class="header-matches">Our matches summary</h1>
+    <table id="table1" class="table table-dark table-hover" style=" margin-left: 5%; margin-top: 3%;">
+       <tr style="background-color: rgb(4, 114, 0);">
+         <th>Upcoming match</th>
+         <th>DATE</th>
+         <th>Stadium</th>
+       </tr>
+       <tr>
+         <td>City Club vs Soccer Queen</td>
+         <td>20/07/2021 15.00 - 17.00</td>
+         <td>Central Stadium</td>
+       </tr>
+       <tr>
+        <td>City Club vs Soccer Queen</td>
+        <td>20/07/2021 15.00 - 17.00</td>
+        <td>Central Stadium</td>
+       </tr>
+       <tr>
+        <td>City Club vs Soccer Queen</td>
+        <td>20/07/2021 15.00 - 17.00</td>
+        <td>Central Stadium</td>
+       </tr>
+       <tr>
+        <td>City Club vs Soccer Queen</td>
+        <td>20/07/2021 15.00 - 17.00</td>
+        <td>Central Stadium</td>
+       </tr>
+       <tr>
+        <td>City Club vs Soccer Queen</td>
+        <td>20/07/2021 15.00 - 17.00</td>
+        <td>Central Stadium</td>
+       </tr>
+       <tr>
+        <td>City Club vs Soccer Queen</td>
+        <td>20/07/2021 15.00 - 17.00</td>
+        <td>Central Stadium</td>
+       </tr>
+    </table>
+    <table id="table2" class="table table-hover table-dark">
+      <tr style="background-color: rgb(4, 114, 0);">
+        <th>TEAM</th>
+        <th>W</th>
+        <th>L</th>
+        <th>D</th>
+      </tr>
+      <tr>
+        <td>Arsenal</td>
+        <td>11</td>
+        <td>02</td>
+        <td>00</td>
+      </tr>
+      <tr>
+        <td>Chelsea</td>
+        <td>11</td>
+        <td>02</td>
+        <td>00</td>
+      </tr>
+      <tr>
+        <td>Real Madrid</td>
+        <td>11</td>
+        <td>02</td>
+        <td>00</td>
+      </tr>
+      <tr>
+        <td>Real Soccer</td>
+        <td>11</td>
+        <td>02</td>
+        <td>00</td>
+      </tr>
+      <tr>
+        <td>City Club</td>
+        <td>11</td>
+        <td>02</td>
+        <td>00</td>
+      </tr>
+      <tr>
+        <td>Chelsea</td>
+        <td>11</td>
+        <td>02</td>
+        <td>00</td>
+      </tr>
+    </table>
+    <button class="btn btn-warning btn-lg  view-more" onclick="modal7()">View More</button>
+  </div>
+<div style="background-color: #f1f1f1; height: 670px;">
+    <h1 class="next-matches">NEXT MATCHES STARTED IN</h1>
+    <div class="timer">0</div>
+    <div class="timer">0</div>
+    <div class="timer">0</div>
+    <span class="time">Hours</span>
+    <span class="time">Minutes</span>
+    <span class="time">Seconds</span>
+    <div class="container">
+    <img class="cmd1" style="opacity: 1;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg/200px-FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg.png">
+    <button class="btn-warning vs2">VS</button>
+    <img class="cmd2" style="opacity: 1;" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/2000px-Chelsea_FC.svg.png">
+   <p class="info-match">Where? Central Stadium. May 18, 2021 14:00 - 16:00.</p>
+  </div>
+</div>
+  <h1 class="video-info">Here video about basketball matches</h1>
+  <iframe width="500" height="362"  src="https://www.youtube.com/embed/0UKsPwpvpLk"></iframe>
+<div class="footer">
+ <h4 class="winbet">About WinnerBet</h4>
+  <address>
+   Address: ST. OLD 202 15.<br>
+   Phone: 111 000 222 000 111.<br>
+   Email: WinBet@league.com
+ </address>
+ <a href="index.html" class="index" style="text-decoration: none;">WinnerBet</a>
+ <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+ <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+ <a href="#" class="youtube"><i class="fa fa-youtube-play"></i></a>
+ <a href="#" class="vk"><i class="fa fa-vk"></i></a>
+ <div id="map"></div>
+ <div id="marker1">
+   <p>Almaty Mall<i class="fa fa-star" style="color: gold;"></i><i class="fa fa-star" style="color: gold;"></i><i class="fa fa-star" style="color: gold;"></i><i class="fa fa-star" style="color: gold;"></i><i class="fa fa-star" style="color: black;"></i></p>
+ </div>
+ <div id="marker2">
+  <p>Moscow Subway Station. Abay Ave, Almaty 050000</p>
+</div>
+<div id="marker3">
+  <p>Dostar MED. Abay Ave,050000</p>
+</div>
+</div>
+</body>
+</html>

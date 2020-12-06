@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Winner Bet</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="main.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="div1" class="container-fluid">
+	<p class="p1"><strong>Latest News: </strong>  Lorem ipsum dolor sit amet, cons ecte tuer adipiscing elit.</p>
+   <button id="btn1" class="btn btn-light"  style="height: 45px;" onclick="document.getElementById('id01').style.display = 'block'"><img src="https://w0.pngwave.com/png/112/858/computer-icons-icon-design-user-register-button-png-clip-art.png" id="icon"> Sign Up</button>
+   <button id="btn2" class="btn btn-light" style="height: 45px;" style="height: 45px;" onclick="document.getElementById('id02').style.display = 'block'"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZekGgS3DR9NAP_D2qxhO76meYfra6XyzPwQ&usqp=CAU" id="icon2"> Log in</button>
+
+<div id="id01" class="modal">
+  <form class="modal-content" id="form1">
+  <span onclick="document.getElementById('id01').style.display='none'" class="closed" title="Close Modal">&times</span>
+    <div id="container" class="container">
+      <h1 id="sign">Sign Up</h1><br>
+      <label for="email"><b>Name</b></label><br>
+      <input type="text" placeholder="Enter Name" name="name" required><br>
+
+      <label for="email"><b>Email</b></label><br>
+      <input type="text" placeholder="Email" name="email" required><br>
+
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+      <div>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div id="id02" class="modal" >
+  <form class="modal-content" id="form2">
+  <span onclick="document.getElementById('id02').style.display='none'" id="close" title="Close Modal">&times</span>
+    <div id="container2" class="container">
+      <h1 id="login">Log in</h1><br>
+      <label for="email"><b>Name</b></label><br>
+      <input type="text" placeholder="Enter Name" name="name" required><br>
+
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label><br>
+      <button type="submit" class="signup">Log in</button><br><br>
+    <div class="container">
+         <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancel">Cancel</button>
+        <span class="forgotpsw"><a href="#">Forgot password?</a></span>
+     </div>
+    </div>
+   </div>
+  </form>
+</div>
+</div>
+
+<div id="div3" class="flexslider">
+	<nav class="nav">
+  <li><a href="#" id="logo" class="nav-link" onmouseover="large(this)" onmouseout="little(this)" onclick="window.location.reload()">Winner Bet</a></li>
+	<ul class="navbar" id="navbar">
+      <li><a href="#" class="nav-link" id="home">Меню</a></li>
+      <li><a href="#" class="nav-link" onclick="change(this)" onclick="change(this)">Партнеры</a></li>
+      <li><a href="#" class="nav-link" onclick="change(this)">Блог</a></li>
+       <li><a href="#" class="nav-link" onclick="change(this)">Галерея</a></li>
+  </ul>
+    <a href="javascript:void(0);" class="burger-menu" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+</nav>
+    <img src="https://bayguzin.ru/demo2019/kickoff/extra-images/slide2.jpg"  id="img1">
+   <div class="container" id="div2">
+   	<h1 id="heading1" class="display-3">Заряжай прогноз и выйгрывай</h1>
+   	<button class="btn btn-warning btn-lg" id="btn3">Сделать ставку</button>
+   	<p id="demo1">Ставка сделана</p>
+   	<script type="text/javascript">
+   		$(function() {
+   			$('#btn3').click(function() {
+   				$('#demo1').toggle(1000);
+   			});
+   		});
+   	</script>
+   </div>
+</div>
+</div>
+   <div id="partners" class="container">
+     <img src="https://verybet.ru/wp-content/uploads/2017/07/Olimp_bukmeker.png" width="400" class="img2">
+     <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_1xBet.png" height="150" class="img3">
+     <img src="https://justgobet.com/wp-content/uploads/2019/07/parimatch-logo.png" width="400" class="img4">
+     <img src="https://i.pinimg.com/474x/d0/29/dc/d029dca6d3225b112fb89d339d1fb39c.jpg" width="400" class="img5">
+   </div>
+   <div class="container-fluid" id="content1">
+    <h4 class="display-5" id="h4">SEARCH MATCH</h4> 
+    <div class="input">
+      <input type="text" id="Command1">
+      <h4 class="vs">VS</h4>
+      <input type="text" id="Command2">
+      <input type="date">
+    </div>
+    <button class="btn-warning btn4">FIND EVENT</button>
+   </div>
+   <div class="container-fluid content2" id="content2">
+     <h1 class="header-gallery">OUR MATCHES GALLERY</h1>
+      <img src="https://bayguzin.ru/demo2019/kickoff/extra-images/gallery-list-1.jpg" class="img6">
+      <img src="https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/3ozns-J9GG54GDF5F-Full-Image_GalleryBackground-en-US-1588074867722._RI_.jpg" class="img7">
+      <img src="https://www.sideshow.com/product-asset/5011032US/feature" class="img8">
+   </div>
+</body>
+</html>
